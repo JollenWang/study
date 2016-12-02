@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+
+<breakfast_menu>
+	<food>
+		<name>Belgian Waffles</name>
+		<price>$5.95</price>
+		<description>
+			two of our famous Belgain Waffles
+		</description>
+		<calories>650</calories>
+	</food>
+</breakfast_menuc>

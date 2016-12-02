@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/css" href="inventory.css"?>
+
+<!--File name:demo.xml -->
+
+<INVENTORY>
+	<BOOK>
+		<TITLE>The adventures of Huckleberry Finn</TITLE>
+		<AUTHOR>Jollen Wang</AUTHOR>
+		<BINDING>mass market paperback</BINDING>
+		<PAGES>289</PAGES>
+		<PRICE>$2.49</PRICE>
+		<HOT>TEST</HOT>
+	</BOOK>
+	<BOOK>
+		<TITLE>Thinking in Java</TITLE>
+		<AUTHOR Born="1935">Alpha</AUTHOR>
+		<BINDING>mass market paperback</BINDING>
+		<PAGES>362</PAGES>
+		<PRICE>$2.8</PRICE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Linux Device Driver</TITLE>
+		<AUTHOR>Linus</AUTHOR>
+		<BINDING>A good book</BINDING>
+		<PAGES>536</PAGES>
+		<PRICE>$19</PRICE>
+	</BOOK>
+</INVENTORY>
+
+<!--comments, processing instructions, and white space can also appear after the document element.-->
+<!--?MyApp Param1="value 1" Param2="value 2"??-->

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>
+
+<!--demo of using xslt-->
+
+<catalog>
+	<cd>
+		<title>Empire Burlesque</title>
+		<artist>Bob Dylan</artist>
+		<country>USA</country>
+		<company>Columbia</company>
+		<price>$10.9</price>
+		<year>1985</year>
+	</cd>
+	<cd>
+		<title>Apple Pie</title>
+		<artist>Shaman</artist>
+		<country>EUR</country>
+		<company>Numbia</company>
+		<price>$12.5</price>
+		<year>1989</year>
+	</cd>
+	<cd>
+		<title>Good Time</title>
+		<artist>Danny</artist>
+		<country>Korea</country>
+		<company>Time</company>
+		<price>$9.9</price>
+		<year>1995</year>
+	</cd>
+	<cd>
+		<title>Big Bang</title>
+		<artist>Harry</artist>
+		<country>Japan</country>
+		<company>D.T</company>
+		<price>$12</price>
+		<year>1999</year>
+	</cd>
+</catalog>
