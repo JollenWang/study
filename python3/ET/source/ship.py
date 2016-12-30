@@ -24,12 +24,15 @@ class Ship():
 
     def update(self):
         if self.mv_left and self.rect.left > 0:
-            self.center -= self.settings.speed_factor
+            self.center -= self.settings.ship_speed_factor
         if self.mv_right and self.rect.right < self.screen_rect.right:
-            self.center += self.settings.speed_factor
+            self.center += self.settings.ship_speed_factor
 
         self.rect.centerx = self.center
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        self.center = self.screen_rect.centerx
 
