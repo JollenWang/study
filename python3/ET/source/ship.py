@@ -6,9 +6,11 @@
 #version: 2.0
 
 import pygame
+from pygame.sprite import Sprite
 
-class Ship():
+class Ship(Sprite):
     def __init__(self, ai_settings, screen):
+        super().__init__()
         self.screen = screen
         self.settings = ai_settings
         self.image = pygame.image.load('../images/WarShip_64.png')
