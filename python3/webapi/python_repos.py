@@ -11,7 +11,6 @@ from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
 
 url = 'https://api.github.com/search/repositories?q=python&sort=stars'
 r = requests.get(url)
-
 print('Status code', r.status_code)
 
 response_dict = r.json()
@@ -24,14 +23,19 @@ print("Respositories returned:", len(repo_dicts))
 #research the first repository
 repo_dict = repo_dicts[0]
 print('\nKeys:', len(repo_dict))
-#for key in sorted(repo_dict.keys()):
-#	print(key)
 
 print('\nSelected infomation of each repository')
-names, stars = [], []
+names, plot_dicts = [], []
 for repo_dict in repo_dicts:
 	names.append(repo_dict['name'])
-	stars.append(repo_dict['stargazers_count'])
+	plot_dict = {
+		'value' : repo_dict['stargazers_count'],
+		'label' : repo_dict['description'],
+		'xlink' : repo_dict['html_url'],
+	}
+	plot_dicts.append(plot_dict)
+	#stars.append(repo_dict['stargazers_count'])
+
 #	print('\nName:', repo_dict['name'])
 #	print('Owner:', repo_dict['owner']['login'])
 #	print('Stars:', repo_dict['stargazers_count'])
@@ -55,7 +59,7 @@ chart = pygal.Bar(my_cfg, style = my_style)
 chart.title = 'Most Popular Python Projects on Github'
 chart.x_labels = names
 
-chart.add('Star', stars)
+chart.add('Stars', plot_dicts)
 chart.render_to_file("./saves/python_repository.svg")
 
 
