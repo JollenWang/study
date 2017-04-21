@@ -1,0 +1,10 @@
+#!/bin/sh
+
+HEADER_MAGIC=0x46504741
+BLOCK_SIZE=0x01000000
+SOURCE_NAME=fpga.bit
+TARGET_NAME=STREAM.BIN
+IMG_ALIAS=bitstream
+
+PARENT=$0
+source ./generator.sh

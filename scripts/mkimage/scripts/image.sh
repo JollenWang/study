@@ -1,0 +1,10 @@
+#!/bin/sh
+
+HEADER_MAGIC=0x55494D47
+BLOCK_SIZE=0x00800000
+SOURCE_NAME=image.ub
+TARGET_NAME=IMAGE.BIN
+IMG_ALIAS=image_ub
+
+PARENT=$0
+source ./generator.sh
